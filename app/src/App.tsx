@@ -4,6 +4,7 @@ import FormComp from './components/FormComp'
 // import ChaiList from './components/ChaiList'
 // import ItemCard from './components/ItemCard'
 import { ItemsList } from './components/ItemsList'
+import SimpleCard from './components/SimpleCard'
 import type { chai } from './types'
 import type { Item } from './types'
 
@@ -43,6 +44,13 @@ function App() {
           console.log("placed" , order.name , order.cups);
           
         }}/>
+      </div>
+
+      <div>
+        <SimpleCard 
+         title='Chai-Sutta and TypeScript'
+         footer ={<button>Order Now</button>}
+        />
       </div>
     </>
   )
